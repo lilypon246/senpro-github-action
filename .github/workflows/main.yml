@@ -46,7 +46,7 @@ jobs:
                                                         echo "Repository belum di-clone. Cloning...";
                                                         mkdir -p ~/senpro/474650/modul02;
                                                         cd~/senpro/474650/modul02;
-                                                        git clone ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIGfQW/ifzHfmPp3Lcd26t7B/qnJqClouUVAgRETiCVYZ senpro-modul2@senpro-modul2;
+                                                        git clone git@github.com:lilypon246/senpro-github-action.git;
                                                 }       ||
                                                 {
                                                         echo "Repository sudah ada. Building...";
