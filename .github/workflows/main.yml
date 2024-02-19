@@ -13,6 +13,7 @@ jobs:
                                 node version: [16.x]
 
                 steps:
+<<<<<<< HEAD
                               - uses: actions/checkout@v2
                               - name: Testing Build pre-Deploy
                                 uses: actions/setup-node@v2
@@ -21,6 +22,16 @@ jobs:
                                         cache: "npm"
                               - run: npm i
                               - run: npm run build
+=======
+                        - uses: actions/checkout@v2
+                        - name: Testing Build pre-Deploy
+                          uses: actions/setup-node@v2
+                          with:
+                                  node-version: ${{ matrix.node-version }}
+                                  cache: "npm"
+                        - run: npm i
+                        - run: npm run build
+>>>>>>> cbb9db124543cad5b48352a426f00ba526b34d82
 
         deploy:
                 needs: test-build
